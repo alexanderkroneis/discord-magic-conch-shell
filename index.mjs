@@ -19,22 +19,27 @@ const yesnoApiUrl = "https://yesno.wtf/api";
 client.login(token);
 client.once("ready", () => console.log(`Logged in as ${client.user.tag}`));
 client.on("messageCreate", async (message) => {
-    if (message.author.bot) {
-        return;
-    }
+    try {
+        if (message.author.bot) {
+            return;
+        }
 
-    if (!message.content.includes("MM:")) {
-        return;
-    }
+        if (!message.content.includes("MM:")) {
+            return;
+        }
 
-    const question = message.content.split("MM:")[1].trim();
+        const question = message.content.split("MM:")[1].trim();
 
-    console.log(`${message.author.username} asked "${question}"`);
+        console.log(`${message.author.username} asked "${question}"`);
 
-    fetch(yesnoApiUrl)
+        fetch(yesnoApiUrl)
         .then((response) => response.json())
         .then((response) => message.reply({
             content: response.answer,
             files: [response.image]
-        }));
+        }))
+        .catch((error) => console.error(error));
+    } catch (error) {
+        console.error(error);
+    }
 });
