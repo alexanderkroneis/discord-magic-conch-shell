@@ -1,0 +1,29 @@
+{
+  "name": "discord-magische-miesmuschel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexgaal/discord-magische-miesmuschel.git"
+  },
+  "author": {
+    "name": "Alexander Gaal",
+    "email": "alexander.gaal@gipfel.dev",
+    "url": "https://gipfel.dev"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexgaal/discord-magische-miesmuschel/issues"
+  },
+  "homepage": "https://github.com/alexgaal/discord-magische-miesmuschel#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
