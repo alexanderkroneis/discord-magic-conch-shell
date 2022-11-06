@@ -3,7 +3,6 @@
 A Discord bot that answers questions with the wisdom of the Magic Conch Shell.
 
 ## Installation
-// translate 1 - 4 in english
 1. Install [Node.js](https://nodejs.org/en/download/)
 2. Install [Git](https://git-scm.com/downloads)
 3. Clone this repository

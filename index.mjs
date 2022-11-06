@@ -1,13 +1,9 @@
 import * as dotenv from "dotenv";
-import fs from "fs";
-import path from "path";
-import {REST, SlashCommandBuilder, Routes} from "discord.js";
 import discord from "discord.js";
 
 dotenv.config();
 
 const token = process.env.DISCORD_TOKEN;
-
 const {Client, GatewayIntentBits} = discord;
 
 const intents = [
