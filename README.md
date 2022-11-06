@@ -1,12 +1,19 @@
-# Magische Miesmuschel
+# Magic Conch Shell
 
-Die Magische Miesmuschel ist ein Discord-Bot, der Fragen die mit "MM:" beginenn mit Yes, No und Maybe beantwortet. Um die Antworten und GIFs zu generieren wird die [yesno.wtf](https://yesno.wtf)-API genutzt.
+A Discord bot that answers questions with the wisdom of the Magic Conch Shell.
 
 ## Installation
-1. Installiere die Abhängigkeiten mit `npm install`.
-2. Erstelle eine `.env`. Du kannst hierfür die `.env.example` kopieren.
-3. Hinterlege den Token deines Bots in der `.env` unter `DISCORD_TOKEN`.
-4. Hoste den Bot und starte ihn mit `node index.mjs`.
+// translate 1 - 4 in english
+1. Install [Node.js](https://nodejs.org/en/download/)
+2. Install [Git](https://git-scm.com/downloads)
+3. Clone this repository
+4. Install dependencies with `npm install`
+5. Create a Discord bot and invite it to your server
+6. Create a file called `.env` in the root directory of the project
+7. Add the following line to the `.env` file: `DISCORD_TOKEN=YOUR_TOKEN_HERE`
+8. Replace `YOUR_TOKEN_HERE` with the token of your Discord bot
+9. Run the bot with `node index.mjs`
+10. Enjoy!
 
 ## Contributors
 - [alexgaal](https://github.com/alexgaal)
